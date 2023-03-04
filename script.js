@@ -1,4 +1,3 @@
-// 
 let item = document.querySelector("#itam");
 let toDoBox = document.querySelector("#to-do-box");
 
@@ -23,7 +22,11 @@ let addToDo = (item) => {
             this.classList.toggle("done")
         }
     )
-    listItem.querySelector("i").addEventListener()
-
+    listItem.querySelector("i").addEventListener(
+    "click",
+    function() {
+        listItem.remove()
+    }
+    )
     toDoBox.appendChild(listItem);
 }
